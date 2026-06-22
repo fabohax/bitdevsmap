@@ -1,4 +1,8 @@
+import { useState } from 'react'
 import type { BitDev } from '../types'
+
+// Cities shown before the list is expanded (3 rows of 4 on desktop).
+const COLLAPSED_COUNT = 12
 
 interface Props {
   cities: BitDev[]
@@ -24,7 +28,10 @@ function ArrowIcon() {
 }
 
 export default function CityIndex({ cities, activeIndex, onHover }: Props) {
+  const [expanded, setExpanded] = useState(false)
   const n = cities.length
+  const canCollapse = n > COLLAPSED_COUNT
+  const visible = expanded || !canCollapse ? cities : cities.slice(0, COLLAPSED_COUNT)
 
   return (
     <section className="pt-[54px] pb-[70px]" id="ciudades">
@@ -39,7 +46,7 @@ export default function CityIndex({ cities, activeIndex, onHover }: Props) {
         </div>
 
         <div className="grid gap-[14px] [grid-template-columns:repeat(auto-fill,minmax(260px,1fr))]">
-          {cities.map((d, i) => (
+          {visible.map((d, i) => (
             <a
               key={`${d.city}-${i}`}
               href={d.url}
@@ -69,6 +76,19 @@ export default function CityIndex({ cities, activeIndex, onHover }: Props) {
             </a>
           ))}
         </div>
+
+        {canCollapse && (
+          <div className="mt-7 flex justify-center">
+            <button
+              type="button"
+              onClick={() => setExpanded((v) => !v)}
+              aria-expanded={expanded}
+              className="rounded-[6px] border border-line px-5 py-3 font-mono text-[12px] uppercase tracking-[0.06em] text-muted transition-colors duration-200 hover:border-line-strong hover:text-strong"
+            >
+              {expanded ? 'Show less' : `Show all ${n} cities`}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   )
