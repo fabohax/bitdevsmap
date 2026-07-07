@@ -61,6 +61,7 @@ export default function TopicsSpotlight({ cities, topics }: Props) {
   const [idx, setIdx] = useState(0)
   const [expanded, setExpanded] = useState(false)
   const [hovering, setHovering] = useState(false)
+  const [focused, setFocused] = useState(false)
   const [reduced, setReduced] = useState(false)
 
   useEffect(() => {
@@ -71,8 +72,9 @@ export default function TopicsSpotlight({ cities, topics }: Props) {
     return () => mq.removeEventListener('change', sync)
   }, [])
 
-  // Rotation freezes while expanded ("Show all"), on hover, or reduced motion.
-  const paused = expanded || hovering || reduced
+  // Rotation freezes while expanded ("Show all"), on hover/keyboard focus, or
+  // reduced motion — otherwise a focused link is lost when the slide remounts.
+  const paused = expanded || hovering || focused || reduced
 
   useEffect(() => {
     if (paused || n <= 1) return
@@ -97,6 +99,9 @@ export default function TopicsSpotlight({ cities, topics }: Props) {
       className="mt-[22px]"
       onMouseEnter={() => setHovering(true)}
       onMouseLeave={() => setHovering(false)}
+      onFocus={() => setFocused(true)}
+      onBlur={() => setFocused(false)}
+      role="region"
       aria-roledescription="carousel"
       aria-label="BitDevs communities"
     >

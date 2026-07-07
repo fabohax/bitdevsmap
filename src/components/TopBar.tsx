@@ -8,8 +8,10 @@ interface Props {
 }
 
 export default function TopBar({ route }: Props) {
-  const linkClass = (active: boolean) =>
-    `${navLink} max-[680px]:hidden ${active ? 'text-strong' : 'text-muted hover:text-strong'}`
+  // Topics is a standalone route with no other entry point, so it stays visible
+  // on mobile; Map/Cities are anchors on the (already-visible) home page.
+  const linkClass = (active: boolean, alwaysShow = false) =>
+    `${navLink} ${alwaysShow ? '' : 'max-[680px]:hidden'} ${active ? 'text-strong' : 'text-muted hover:text-strong'}`
 
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-[rgba(6,6,7,0.82)] backdrop-blur-[8px]">
@@ -30,7 +32,7 @@ export default function TopBar({ route }: Props) {
           <a className={linkClass(route === 'home')} href="#map">
             Map
           </a>
-          <a className={linkClass(route === 'topics')} href="#/topics">
+          <a className={linkClass(route === 'topics', true)} href="#/topics">
             Topics
           </a>
           <a

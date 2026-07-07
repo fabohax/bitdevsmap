@@ -48,15 +48,21 @@ const UA = 'bitdevsmap-aggregator'
 
 // --- generic helpers -------------------------------------------------------
 
+// Named entities common in feed titles (typographic punctuation) beyond the
+// numeric refs handled above. &amp; is decoded last to avoid double-decoding.
+const NAMED_ENTITIES: Record<string, string> = {
+  '&lt;': '<', '&gt;': '>', '&quot;': '"', '&apos;': "'", '&nbsp;': ' ',
+  '&rsquo;': '’', '&lsquo;': '‘', '&rdquo;': '”', '&ldquo;': '“',
+  '&mdash;': '—', '&ndash;': '–', '&hellip;': '…', '&deg;': '°',
+  '&copy;': '©', '&reg;': '®', '&trade;': '™',
+}
+
 function decodeEntities(s: string): string {
   return s
     .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
     .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(parseInt(d, 10)))
-    .replace(/&lt;/g, '<')
-    .replace(/&gt;/g, '>')
-    .replace(/&quot;/g, '"')
-    .replace(/&apos;/g, "'")
-    .replace(/&nbsp;/g, ' ')
+    .replace(/&(?:lt|gt|quot|apos|nbsp|rsquo|lsquo|rdquo|ldquo|mdash|ndash|hellip|deg|copy|reg|trade);/g,
+      (m) => NAMED_ENTITIES[m] ?? m)
     .replace(/&amp;/g, '&')
 }
 
@@ -379,14 +385,6 @@ function readTopicsIndex(): TopicsIndex {
   }
 }
 
-function hostOf(url: string): string {
-  try {
-    return new URL(url).host.replace(/^www\./, '')
-  } catch {
-    return ''
-  }
-}
-
 async function main() {
   const cities = JSON.parse(readFileSync(BITDEVS_PATH, 'utf8')) as BitDev[]
   const sources = JSON.parse(readFileSync(SOURCES_PATH, 'utf8')) as Record<string, GithubIssuesSource>
@@ -417,7 +415,7 @@ async function main() {
         }
       }
 
-      const host = hostOf(city.url)
+      const host = hostOfUrl(city.url)
       if (!host || SKIP_HOSTS.some((h) => host === h || host.endsWith(`.${h}`))) {
         return report({ city, skipped: 'non-website' })
       }
@@ -436,9 +434,11 @@ async function main() {
     CONCURRENCY,
   )
 
-  // Rebuild the index from this run. A community is kept only if it yielded
-  // topics now, except on a transient network error where we carry over its
-  // last-known topics so a momentary outage doesn't drop it.
+  // Rebuild the index from scratch each run so tightened filters can drop
+  // communities that no longer yield clean topics. A "no topics" skip is a real
+  // (possibly permanent) result and is intentionally NOT carried over — only a
+  // genuine network error reuses the last-known topics, so a momentary outage
+  // doesn't drop a community.
   const index: TopicsIndex = {}
   for (const o of outcomes) {
     if (o.topics && o.topics.length > 0) {
@@ -447,18 +447,24 @@ async function main() {
       index[o.city.id] = previous[o.city.id]
     }
   }
-  const withTopics = outcomes.filter((o) => o.topics && o.topics.length > 0)
 
   const sorted: TopicsIndex = {}
   for (const key of Object.keys(index).sort()) sorted[key] = index[key]
   writeFileSync(TOPICS_PATH, JSON.stringify(sorted, null, 2) + '\n')
 
-  // --- coverage report (no silent caps) ---
-  const bySource: Record<string, number> = {}
-  for (const o of withTopics) bySource[o.source!] = (bySource[o.source!] ?? 0) + 1
+  // --- coverage report (derived from the written index, no silent caps) ---
+  const withTopics = outcomes.filter((o) => o.topics && o.topics.length > 0)
   const errored = outcomes.filter((o) => o.error)
+  const written = Object.keys(index).length
+  const carried = written - withTopics.length
 
-  console.log(`\nCoverage: ${withTopics.length}/${cities.length} communities with topics`)
+  const bySource: Record<string, number> = {}
+  for (const entry of Object.values(index)) bySource[entry.source] = (bySource[entry.source] ?? 0) + 1
+
+  console.log(
+    `\nCoverage: ${written}/${cities.length} communities in topics.json` +
+      ` (fresh ${withTopics.length}, carried over ${carried})`,
+  )
   console.log('  by source:', bySource)
   console.log(`  skipped: ${outcomes.filter((o) => o.skipped).length}, errored: ${errored.length}`)
   for (const o of withTopics) {
