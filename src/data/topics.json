@@ -1,8 +1,131 @@
 {
+  "amsterdam": {
+    "id": "amsterdam",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "bips.dev/54",
+        "url": "https://bips.dev/54/",
+        "date": "2026-02-05T00:00:00.000Z"
+      },
+      {
+        "title": "bitcoin-inquisition/bitcoin#99",
+        "url": "https://github.com/bitcoin-inquisition/bitcoin/pull/99",
+        "date": "2026-02-05T00:00:00.000Z"
+      },
+      {
+        "title": "Bitcoin-Dev list",
+        "url": "https://groups.google.com/g/bitcoindev/c/L4Eu9bA5iBw/m/jo9RzS-HAQAJ",
+        "date": "2026-02-05T00:00:00.000Z"
+      },
+      {
+        "title": "delvingbitcoin.org",
+        "url": "https://delvingbitcoin.org/t/modifying-bip54-to-support-future-ntime-soft-fork/2163",
+        "date": "2026-02-05T00:00:00.000Z"
+      }
+    ]
+  },
+  "asuncion": {
+    "id": "asuncion",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Bitcoin (Core, protocol, wallets)",
+        "url": "https://asuncionbitdevs.org/2026-06-19-socratic-seminar-015#bitcoin-core-protocol-wallets",
+        "date": "2026-06-19T00:00:00.000Z"
+      },
+      {
+        "title": "Lightning and L2",
+        "url": "https://asuncionbitdevs.org/2026-06-19-socratic-seminar-015#lightning-and-l2",
+        "date": "2026-06-19T00:00:00.000Z"
+      },
+      {
+        "title": "Privacy / Cryptography / Research / Security",
+        "url": "https://asuncionbitdevs.org/2026-06-19-socratic-seminar-015#privacy--cryptography--research--security",
+        "date": "2026-06-19T00:00:00.000Z"
+      }
+    ]
+  },
+  "athens": {
+    "id": "athens",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Review of technical Bitcoin news",
+        "url": "https://bitdevs-athens.com/2025-03-27-bitdevs-13",
+        "date": "2025-03-27T00:00:00.000Z"
+      },
+      {
+        "title": "ARK Protocol",
+        "url": "https://bitdevs-athens.com/2025-03-27-bitdevs-13",
+        "date": "2025-03-27T00:00:00.000Z"
+      },
+      {
+        "title": "Bitcoin Blockchain indexing and wallet address handling",
+        "url": "https://bitdevs-athens.com/2025-03-27-bitdevs-13",
+        "date": "2025-03-27T00:00:00.000Z"
+      },
+      {
+        "title": "One-page introduction",
+        "url": "https://docs.second.tech/protocol/intro/",
+        "date": "2025-03-27T00:00:00.000Z"
+      },
+      {
+        "title": "One-page introduction plus deeper developer documentation",
+        "url": "https://arkdev.info/docs/learn/concepts",
+        "date": "2025-03-27T00:00:00.000Z"
+      },
+      {
+        "title": "75-minute podcast with Stephan Livera",
+        "url": "https://www.youtube.com/watch?v=1VSNArCC9yw",
+        "date": "2025-03-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "austin": {
+    "id": "austin",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "ProductionReady Launches",
+        "url": "https://productionready.org/blog/productionready-launches",
+        "date": "2026-04-16T00:00:00.000Z"
+      },
+      {
+        "title": "Lexe Wallet Public Release on App Store and Google Play",
+        "url": "https://blog.lexe.app/public-launch/",
+        "date": "2026-04-16T00:00:00.000Z"
+      },
+      {
+        "title": "Policy: Report Debug Message Why Inputs Are Non-Standard",
+        "url": "https://github.com/bitcoin/bitcoin/pull/29060",
+        "date": "2026-04-16T00:00:00.000Z"
+      },
+      {
+        "title": "Remove Taproot BIP 9 Deployment",
+        "url": "https://github.com/bitcoin/bitcoin/pull/26201",
+        "date": "2026-04-16T00:00:00.000Z"
+      },
+      {
+        "title": "Wallet Fingerprinting and Payjoin Privacy",
+        "url": "https://payjoin.org/blog/2026/03/25/wallet-fingerprints-payjoin-privacy",
+        "date": "2026-04-16T00:00:00.000Z"
+      },
+      {
+        "title": "A Decade of Workarounds",
+        "url": "https://spiralbtc.substack.com/p/a-decade-of-workarounds",
+        "date": "2026-04-16T00:00:00.000Z"
+      }
+    ]
+  },
   "brisbane": {
     "id": "brisbane",
     "source": "github-issues",
-    "fetchedAt": "2026-07-07T01:46:29.336Z",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
     "topics": [
       {
         "title": "Meetup #13, July 2026 - Theme: Mining",
@@ -28,13 +151,328 @@
         "title": "Meetup #9, February 2026 - Theme: Covenants",
         "url": "https://github.com/BneBitDevs/Meetup/issues/9",
         "date": "2026-02-24T10:30:24Z"
+      },
+      {
+        "title": "Meetup #8, January 2026 - Theme: Quantum",
+        "url": "https://github.com/BneBitDevs/Meetup/issues/8",
+        "date": "2026-02-24T10:29:56Z"
+      }
+    ]
+  },
+  "chicago": {
+    "id": "chicago",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Illinois’ Digital Asset Trading Tax Proposal",
+        "url": "http://chibitdevs.org/2026-06-11-socratic-seminar-78#illinois-digital-asset-trading-tax-proposal",
+        "date": "2026-06-11T00:00:00.000Z"
+      },
+      {
+        "title": "A Post-Quantum Path for BIP 324",
+        "url": "http://chibitdevs.org/2026-06-11-socratic-seminar-78#a-post-quantum-path-for-bip-324",
+        "date": "2026-06-11T00:00:00.000Z"
+      },
+      {
+        "title": "BIP452: P2P UTXO Set Sharing",
+        "url": "http://chibitdevs.org/2026-06-11-socratic-seminar-78#bip452-p2p-utxo-set-sharing",
+        "date": "2026-06-11T00:00:00.000Z"
+      },
+      {
+        "title": "BIP 450: Formosa—Seed encoding by themed mnemonic stories",
+        "url": "http://chibitdevs.org/2026-06-11-socratic-seminar-78#bip-450-formosaseed-encoding-by-themed-mnemonic-stories",
+        "date": "2026-06-11T00:00:00.000Z"
+      },
+      {
+        "title": "BIP 449: OP_TWEAKADD - x-only key tweak addition",
+        "url": "http://chibitdevs.org/2026-06-11-socratic-seminar-78#bip-449-op_tweakadd---x-only-key-tweak-addition",
+        "date": "2026-06-11T00:00:00.000Z"
+      },
+      {
+        "title": "CUBE: Bitcoin smart contracts built on Ark",
+        "url": "http://chibitdevs.org/2026-06-11-socratic-seminar-78#cube-bitcoin-smart-contracts-built-on-ark",
+        "date": "2026-06-11T00:00:00.000Z"
+      }
+    ]
+  },
+  "cotonou": {
+    "id": "cotonou",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "bitcoin/bitcoin #32359 Remove arbitrary limits on OP_Return",
+        "url": "https://x.com/wk057/status/1917235710781690171",
+        "date": "2025-05-10T00:00:00.000Z"
+      },
+      {
+        "title": "Bitcoin Optech newsletter #351 & #352",
+        "url": "https://x.com/bitcoinoptech/status/1915722446037983484",
+        "date": "2025-05-10T00:00:00.000Z"
+      },
+      {
+        "title": "Bitcoin transaction with Decoding Bitcoin",
+        "url": "https://bitcoindevs.xyz/decoding",
+        "date": "2025-05-10T00:00:00.000Z"
+      },
+      {
+        "title": "Next Meetups and Annoucements",
+        "url": "http://bitdevscotonou.org/en/2025-05-10-socratic-seminar-3",
+        "date": "2025-05-10T00:00:00.000Z"
+      }
+    ]
+  },
+  "goma": {
+    "id": "goma",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Qu’est-ce que le Lightning Network et pourquoi il a été créé",
+        "url": "https://bitdevsgoma.org/2026-06-26-socratic-seminar-13",
+        "date": "2026-06-26T00:00:00.000Z"
+      },
+      {
+        "title": "Différence entre transactions en chaîne et paiements hors chaîne",
+        "url": "https://bitdevsgoma.org/2026-06-26-socratic-seminar-13",
+        "date": "2026-06-26T00:00:00.000Z"
+      },
+      {
+        "title": "Notion de canaux de paiement et réseau de routage",
+        "url": "https://bitdevsgoma.org/2026-06-26-socratic-seminar-13",
+        "date": "2026-06-26T00:00:00.000Z"
+      },
+      {
+        "title": "Avantages : rapidité, faible coût, évolutivité",
+        "url": "https://bitdevsgoma.org/2026-06-26-socratic-seminar-13",
+        "date": "2026-06-26T00:00:00.000Z"
+      },
+      {
+        "title": "Interaction entre Bitcoin L1 et Lightning L2",
+        "url": "https://bitdevsgoma.org/2026-06-26-socratic-seminar-13",
+        "date": "2026-06-26T00:00:00.000Z"
+      },
+      {
+        "title": "Rôle des Nœuds Foudre",
+        "url": "https://bitdevsgoma.org/2026-06-26-socratic-seminar-13",
+        "date": "2026-06-26T00:00:00.000Z"
+      }
+    ]
+  },
+  "guadalajara": {
+    "id": "guadalajara",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Cosas que realmente discutiremos",
+        "url": "http://bitdevs.btcgdl.com/2025-11-11-socratic-seminar-17#cosas-que-realmente-discutiremos",
+        "date": "2025-11-11T00:00:00.000Z"
+      },
+      {
+        "title": "Carteras Hardware y Seguridad",
+        "url": "http://bitdevs.btcgdl.com/2025-11-11-socratic-seminar-17#carteras-hardware-y-seguridad",
+        "date": "2025-11-11T00:00:00.000Z"
+      },
+      {
+        "title": "Minería y Economía de Bitcoin",
+        "url": "http://bitdevs.btcgdl.com/2025-11-11-socratic-seminar-17#minería-y-economía-de-bitcoin",
+        "date": "2025-11-11T00:00:00.000Z"
+      },
+      {
+        "title": "Actualizaciones de Software y Protocolos",
+        "url": "http://bitdevs.btcgdl.com/2025-11-11-socratic-seminar-17#actualizaciones-de-software-y-protocolos",
+        "date": "2025-11-11T00:00:00.000Z"
+      },
+      {
+        "title": "Privacidad e Innovaciones de Capas",
+        "url": "http://bitdevs.btcgdl.com/2025-11-11-socratic-seminar-17#privacidad-e-innovaciones-de-capas",
+        "date": "2025-11-11T00:00:00.000Z"
+      }
+    ]
+  },
+  "kaduna": {
+    "id": "kaduna",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Understanding Open source",
+        "url": "https://bitdevskaduna.org/socratic-seminar-4/",
+        "date": "2026-01-31T00:00:00.000Z"
+      },
+      {
+        "title": "Architecture of Sabi Wallet",
+        "url": "https://bitdevskaduna.org/socratic-seminar-4/",
+        "date": "2026-01-31T00:00:00.000Z"
+      },
+      {
+        "title": "Networking session",
+        "url": "https://bitdevskaduna.org/socratic-seminar-4/",
+        "date": "2026-01-31T00:00:00.000Z"
+      },
+      {
+        "title": "Bitcoin Optech Newsletter Updates",
+        "url": "https://bitcoinops.org/en/newsletters/2026/01/30/",
+        "date": "2026-01-31T00:00:00.000Z"
+      },
+      {
+        "title": "Adopting Bitcoin Conferences Cafe town",
+        "url": "https://za26.adoptingbitcoin.org/",
+        "date": "2026-01-31T00:00:00.000Z"
+      }
+    ]
+  },
+  "kampala": {
+    "id": "kampala",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Lightning project building sessions",
+        "url": "http://bitdevskla.org/2026-03-27-socratic-seminar-8",
+        "date": "2026-03-27T00:00:00.000Z"
+      },
+      {
+        "title": "Project demos from bootcamp participants",
+        "url": "http://bitdevskla.org/2026-03-27-socratic-seminar-8",
+        "date": "2026-03-27T00:00:00.000Z"
+      },
+      {
+        "title": "Awarding of winning projects and closing remarks",
+        "url": "http://bitdevskla.org/2026-03-27-socratic-seminar-8",
+        "date": "2026-03-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "lagos": {
+    "id": "lagos",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Purpose: Nodegaze helps node operators monitor the health and activity of their Lightning Network node.",
+        "url": "https://www.bitdevslagos.org/socratic-seminar-14/",
+        "date": "2025-10-25T00:00:00.000Z"
+      },
+      {
+        "title": "Core Goal: To leverage Bitcoin technology to enhance the transparency and accountability of cooperative finance administrators and operations.",
+        "url": "https://www.bitdevslagos.org/socratic-seminar-14/",
+        "date": "2025-10-25T00:00:00.000Z"
+      },
+      {
+        "title": "Function: Minmo acts as a decentralized aggregator , connecting individuals who offer on-ramping and off-ramping services for Bitcoin using the Lightning Network .",
+        "url": "https://www.bitdevslagos.org/socratic-seminar-14/",
+        "date": "2025-10-25T00:00:00.000Z"
+      }
+    ]
+  },
+  "mauritius": {
+    "id": "mauritius",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Welcome and meetup overview",
+        "url": "https://bitdevsmauritius.org/socratic-seminar-7/",
+        "date": "2026-06-27T00:00:00.000Z"
+      },
+      {
+        "title": "Recap of the previous Lightning Network session",
+        "url": "https://bitdevsmauritius.org/socratic-seminar-7/",
+        "date": "2026-06-27T00:00:00.000Z"
+      },
+      {
+        "title": "Objectives for today's discussion",
+        "url": "https://bitdevsmauritius.org/socratic-seminar-7/",
+        "date": "2026-06-27T00:00:00.000Z"
+      },
+      {
+        "title": "Review of payment channels",
+        "url": "https://bitdevsmauritius.org/socratic-seminar-7/",
+        "date": "2026-06-27T00:00:00.000Z"
+      },
+      {
+        "title": "Lightning daemon architecture",
+        "url": "https://bitdevsmauritius.org/socratic-seminar-7/",
+        "date": "2026-06-27T00:00:00.000Z"
+      },
+      {
+        "title": "Onion routing and message propagation",
+        "url": "https://bitdevsmauritius.org/socratic-seminar-7/",
+        "date": "2026-06-27T00:00:00.000Z"
+      }
+    ]
+  },
+  "mexico-city": {
+    "id": "mexico-city",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Política interna de mempool",
+        "url": "https://bitcoindevs.xyz/2025-05-16-socratic-seminar-5",
+        "date": "2025-05-16T00:00:00.000Z"
+      },
+      {
+        "title": "Propuestas de eliminar el filtro de tamaño de OP_RETURN en Bitcoin Core",
+        "url": "https://bitcoindevs.xyz/2025-05-16-socratic-seminar-5",
+        "date": "2025-05-16T00:00:00.000Z"
+      },
+      {
+        "title": "Opiniones a favor de eliminar el filtro",
+        "url": "https://bitcoindevs.xyz/2025-05-16-socratic-seminar-5",
+        "date": "2025-05-16T00:00:00.000Z"
+      },
+      {
+        "title": "Opiniones en contra de eliminar el filtro (o a favor de Knots)",
+        "url": "https://bitcoindevs.xyz/2025-05-16-socratic-seminar-5",
+        "date": "2025-05-16T00:00:00.000Z"
+      }
+    ]
+  },
+  "nairobi": {
+    "id": "nairobi",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "Citrea recently changed their scheme to use a single 144-byte OP_RETURN",
+        "url": "https://x.com/jonatack/status/2067819987033608358",
+        "date": "2026-06-20T00:00:00.000Z"
+      },
+      {
+        "title": "Draft BIP for testnet5",
+        "url": "https://groups.google.com/g/bitcoindev/c/kGUMTxOvdJA/m/Eyx5FxQeAAAJ",
+        "date": "2026-06-20T00:00:00.000Z"
+      },
+      {
+        "title": "A post-quantum path for BIP324",
+        "url": "https://groups.google.com/g/bitcoindev/c/n_5WuKVYqwI/m/lBooLis3AQAJ",
+        "date": "2026-06-20T00:00:00.000Z"
+      },
+      {
+        "title": "Disposing of “dust attack” UTXOs",
+        "url": "https://delvingbitcoin.org/t/disposing-of-dust-attack-utxos/2215/4",
+        "date": "2026-06-20T00:00:00.000Z"
+      },
+      {
+        "title": "Bitcoin Core #35221: BIP434 peer feature negotiation",
+        "url": "https://github.com/bitcoin/bitcoin/pull/35221",
+        "date": "2026-06-20T00:00:00.000Z"
+      },
+      {
+        "title": "Removing RBF opt-in signaling from wallet transactions",
+        "url": "https://github.com/bitcoin/bitcoin/pull/35405",
+        "date": "2026-06-20T00:00:00.000Z"
       }
     ]
   },
   "perth": {
     "id": "perth",
     "source": "github-issues",
-    "fetchedAt": "2026-07-07T01:46:29.336Z",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
     "topics": [
       {
         "title": "July 2026 Perth BitDevs",
@@ -60,13 +498,72 @@
         "title": "March 2026 Perth BitDevs",
         "url": "https://github.com/PerthBitDevs/PerthBitDevs/issues/32",
         "date": "2026-06-06T04:46:30Z"
+      },
+      {
+        "title": "February 2026 BitDevs / meetup topics",
+        "url": "https://github.com/PerthBitDevs/PerthBitDevs/issues/30",
+        "date": "2026-06-06T04:46:30Z"
+      }
+    ]
+  },
+  "raleigh-durham-chapel-hill": {
+    "id": "raleigh-durham-chapel-hill",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "nodeless sdk docs",
+        "url": "https://sdk-doc-liquid.breez.technology/",
+        "date": "2024-10-26T00:00:00.000Z"
+      },
+      {
+        "title": "native sdk docs",
+        "url": "https://sdk-doc-greenlight.breez.technology/",
+        "date": "2024-10-26T00:00:00.000Z"
+      },
+      {
+        "title": "blog announcement",
+        "url": "https://blog.liquid.net/breez-releases-nodeless-sdk-implementation-powered-by-liquid/",
+        "date": "2024-10-26T00:00:00.000Z"
+      },
+      {
+        "title": "BOLT12 Offers Merged",
+        "url": "https://github.com/lightning/bolts/pull/798",
+        "date": "2024-10-26T00:00:00.000Z"
+      },
+      {
+        "title": "Building Bolt12 Into Strike",
+        "url": "https://strike.me/blog/bolt12-offers/",
+        "date": "2024-10-26T00:00:00.000Z"
+      },
+      {
+        "title": "Mutiny Wallet",
+        "url": "https://blog.mutinywallet.com/mutiny-wallet-is-shutting-down/",
+        "date": "2024-10-26T00:00:00.000Z"
+      }
+    ]
+  },
+  "san-salvador": {
+    "id": "san-salvador",
+    "source": "rss",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
+    "topics": [
+      {
+        "title": "4:00p - 4:30p: Arrival & Networking",
+        "url": "https://bitdevelsalvador.com/2025-03-05-socratic-seminar-15",
+        "date": "2025-03-05T00:00:00.000Z"
+      },
+      {
+        "title": "4:30p - 6p: Socratic Seminar focused on various technical Bitcoin topics",
+        "url": "https://bitdevelsalvador.com/2025-03-05-socratic-seminar-15",
+        "date": "2025-03-05T00:00:00.000Z"
       }
     ]
   },
   "seattle": {
     "id": "seattle",
     "source": "github-issues",
-    "fetchedAt": "2026-07-07T01:46:29.336Z",
+    "fetchedAt": "2026-07-07T04:21:56.448Z",
     "topics": [
       {
         "title": "Arké wallet, first true normie friendly self custodial wallet?",
@@ -92,6 +589,11 @@
         "title": "Review CTV versus template hash",
         "url": "https://github.com/reardencode/seattle_bitdevs/issues/10",
         "date": "2026-02-26T23:17:02Z"
+      },
+      {
+        "title": "Anchorwatch launches 1 key and multi institution vaults",
+        "url": "https://github.com/reardencode/seattle_bitdevs/issues/13",
+        "date": "2026-02-26T23:16:38Z"
       }
     ]
   }

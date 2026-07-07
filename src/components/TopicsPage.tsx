@@ -2,7 +2,7 @@ import { useMemo } from 'react'
 import type { BitDev, TopicsIndex } from '../types'
 
 // Most recent topics shown in the global feed.
-const MAX_FEED = 40
+const MAX_FEED = 48
 
 interface Props {
   cities: BitDev[]
