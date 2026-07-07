@@ -24,8 +24,8 @@ const BITDEVS_PATH = join(root, 'src/data/bitdevs.json')
 const SOURCES_PATH = join(root, 'scripts/sources.json')
 const TOPICS_PATH = join(root, 'src/data/topics.json')
 
-/** Max topics kept per community. */
-const MAX_TOPICS = 6
+/** Max topics kept per community (the full "Show all" list; preview shows 3). */
+const MAX_TOPICS = 20
 /** Concurrent community fetches. */
 const CONCURRENCY = 12
 /** Feed paths probed during auto-discovery, in order. */
